@@ -17,7 +17,7 @@
 
 /* Reusable CSS */
 .section {
-  padding: 4.5rem 0 2rem;
+  padding: 4.5rem 0 4.5rem;
 }
 
 .section__title {
@@ -307,6 +307,76 @@
 /* NFTs */
 
 /* Collections */
+.collections {
+  background: #05142e;
+}
+
+.collections__title {
+  font-family: 'Exo 2';
+  font-size: var(--big-fs);
+  text-align: left;
+  color: var(--white-color);
+  margin-bottom: var(--m-2);
+  font-weight: var(--bold-fw);
+}
+
+.collections__subtitle {
+  font-size: var(--small-fs);
+  font-weight: var(--semiBold-fw);
+  color: var(--first-color);
+  margin-bottom: var(--m-0-5);
+  display: block;
+}
+
+.collections__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin-top: var(--m-1-5);
+}
+
+.collections__content img {
+  width: 40px;
+  height: 40px;
+}
+
+.collections__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.collections__card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  gap: 16px;
+  background: linear-gradient(90deg, #031027 0%, #000a1bf7 100%);
+}
+
+.collections__card-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.collections__card-content img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.collections__card-data h3 {
+  font-size: var(--small-fs);
+  color: var(--white-color);
+}
+
+.collections__card-data p {
+  font-size: var(--small-fs);
+  color: var(--white-color);
+  opacity: 0.5;
+}
 
 /* Criptos */
 
@@ -490,6 +560,10 @@
   .features__container {
     grid-template-columns: 1fr;
   }
+
+  .collections__content {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 340px) {
@@ -498,5 +572,20 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .collections__list.last {
+    display: none;
+  }
+  .collections__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .collections__content {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
