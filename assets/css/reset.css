@@ -24,7 +24,7 @@ body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-fs);
-  background: var(--body-color);
+  background: var(--light-color);
   color: var(--text-color);
 }
 
@@ -39,11 +39,15 @@ button {
   font-size: var(--normal-fs);
 }
 
+form {
+  width: 100%;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  color: var(--title-color);
+  color: var(--dark-color);
   font-weight: var(--semiBold-fw);
 }
 
@@ -55,4 +59,9 @@ ul {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+input {
+  border: none;
+  outline: none;
 }
