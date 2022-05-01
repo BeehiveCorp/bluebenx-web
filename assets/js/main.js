@@ -1,10 +1,15 @@
-// Toggle menu
 const navInteractions = document.querySelector('#navInteractions');
-const navOpen = document.querySelector('#nav-open');
-const navClose = document.querySelector('#nav-close');
 
-[navOpen, navClose].map(toggle =>
-  toggle.addEventListener('click', () => {
-    navInteractions.classList.toggle('active');
-  })
-);
+// Toggle menu
+const navOpen = document.querySelector('#nav-open');
+
+function toggle() {
+  navInteractions.classList.toggle('active');
+  navOpen.classList.toggle('active');
+}
+
+navOpen.addEventListener('click', toggle);
+
+// Nav link toggle menu
+const navLinks = document.querySelectorAll('.nav__link');
+navLinks.forEach(link => link.addEventListener('click', toggle));
