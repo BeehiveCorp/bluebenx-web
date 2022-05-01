@@ -9,7 +9,8 @@ const integrantes = [
 
 /* 
 Os wireframes foram desenvolvidos na ferramenta de prototipação Figma, é só acessar o link
-abaixo, não precisa baixar e nem fazer Login
+abaixo, não precisa baixar e nem fazer Login. As documentações / comentários estão dentro do Figma também, é só
+passar o mouse nos lugares que têm minha foto :)
 */
 
 const wireframes = 'https://www.figma.com/file/snSvKoy1xH6KllWUfJcPH1/Wireframes?node-id=0%3A1';
