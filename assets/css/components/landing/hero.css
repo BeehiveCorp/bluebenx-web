@@ -121,6 +121,7 @@
 }
 
 .hero__visual img {
+  max-width: 100%;
   width: 100%;
   border-radius: 8px 8px 0 0;
 }
@@ -143,6 +144,12 @@
   padding: 1rem;
 }
 
+@media screen and (min-width: 867px) {
+  .hero__visual img {
+    width: 80%;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .footer__container {
     grid-template-columns: repeat(4, 1fr);
@@ -162,7 +169,8 @@
     padding: 0;
   }
   .hero__visual {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
   }
   .hero__content .button {
     margin: initial;
@@ -172,5 +180,14 @@
 @media screen and (max-width: 586px) {
   .hero__content {
     padding: 0 1rem;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero__title {
+    font-size: 2.5rem;
   }
 }

@@ -4,11 +4,11 @@
     linear,
     left top,
     left bottom,
-    from(#001029cc)
+    from(#031027)
   );
   padding: 4.5rem;
   border-radius: 2rem;
-  margin-top: -5%;
+  margin-top: -6%;
   margin-bottom: 2.5rem;
   z-index: 3;
   position: relative;
@@ -27,8 +27,9 @@
 .features__card {
   padding: 2rem;
   border-radius: 24px;
-  background: linear-gradient(90deg, #001029 0%, #051733 100%);
+  background: linear-gradient(90deg, #031027 0%, #051733 100%);
   text-align: center;
+  cursor: pointer;
 }
 
 .features__icon i {
@@ -48,8 +49,26 @@
   font-weight: 300;
 }
 
+@media screen and (max-width: 768px) {
+  .features__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 586px) {
   .features__container {
     grid-template-columns: 1fr;
+  }
+  .features {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .features__container {
+    grid-template-columns: 1fr;
+  }
+  .features {
+    padding: 2rem 1.5rem 1.5rem;
   }
 }
