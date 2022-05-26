@@ -1,0 +1,36 @@
+/* Features */
+.features__container {
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.features__container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.features__card {
+  padding: 2rem;
+  border-radius: 24px;
+  background-color: hsl(216, 33%, 94%);
+  text-align: center;
+}
+
+.features__icon i {
+  opacity: 0.3;
+  font-size: var(--biggest-fs);
+  margin-bottom: var(--m-2);
+}
+
+.features__title {
+  margin-bottom: var(--m-1);
+}
+
+.features__description {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 586px) {
+  .features__container {
+    grid-template-columns: 1fr;
+  }
+}

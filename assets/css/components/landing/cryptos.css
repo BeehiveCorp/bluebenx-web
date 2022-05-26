@@ -1,0 +1,52 @@
+/* Criptos */
+.criptos__container {
+  row-gap: 1rem;
+}
+
+.row {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.row .name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.row .name__icon {
+  width: 16px;
+}
+
+.row.head {
+  opacity: 0.5;
+  font-weight: var(--regular-fw);
+  font-size: var(--small-fs);
+}
+
+.stock.positive {
+  color: green;
+}
+
+.stock.negative {
+  color: red;
+}
+
+@media screen and (max-width: 400px) {
+  .stock {
+    display: none;
+  }
+
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .capitalization {
+    display: none;
+  }
+
+  .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

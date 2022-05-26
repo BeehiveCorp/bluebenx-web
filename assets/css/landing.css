@@ -1,0 +1,12 @@
+@import url('global/reset.css');
+@import url('global/variables.css');
+@import url('global/layout.css');
+@import url('global/reusable.css');
+
+@import url('components/landing/header.css');
+@import url('components/landing/hero.css');
+@import url('components/landing/features.css');
+@import url('components/landing/collections.css');
+@import url('components/landing/cryptos.css');
+@import url('components/landing/newsletter.css');
+@import url('global/footer.css');
