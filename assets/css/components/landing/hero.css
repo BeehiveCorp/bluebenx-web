@@ -1,4 +1,20 @@
 /* Hero */
+@keyframes textIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes textOut {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 
 .hero {
   background: rgba(0, 16, 41, 1);
@@ -60,12 +76,36 @@
   margin: 0 auto;
 }
 
+.hero__text {
+  position: relative;
+  z-index: 2;
+}
+
 .hero__title {
   color: var(--white-color);
   font-weight: var(--semiBold-fw);
-  font-size: var(--biggest-fs);
   font-family: 'Exo 2';
+  font-size: 4rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hero__title.static {
+  margin-top: -12px;
   margin-bottom: var(--m-2);
+}
+
+.hero__title span {
+  display: none;
+}
+
+.hero__title span.text-in {
+  display: block;
+  animation: textIn 0.5s ease;
+}
+
+.hero__title span.text-out {
+  animation: textOut 0.5s ease;
 }
 
 .hero__description {
@@ -120,9 +160,6 @@
   }
   .hero__content {
     padding: 0;
-  }
-  .hero__title {
-    font-size: var(--big-fs);
   }
   .hero__visual {
     display: block;
