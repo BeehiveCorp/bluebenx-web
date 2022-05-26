@@ -21,10 +21,10 @@ html {
 
 body {
   scroll-behavior: smooth;
-  margin: var(--header-height) 0 0 0;
+  margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-fs);
-  background: var(--light-color);
+  background: linear-gradient(90deg, #051733 0%, #051733 100%);
   color: var(--text-color);
 }
 

@@ -1,7 +1,13 @@
 /* Header & Nav */
 .header {
   width: 100%;
-  background: var(--dark-color);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 16, 41, 0.8))
+  );
+  backdrop-filter: blur(15px) saturate(180%);
   position: fixed;
   top: 0;
   left: 0;
@@ -9,9 +15,9 @@
   transition: 0.3s;
 }
 
-.header.active {
+/* .header.active {
   border-bottom: 2px solid var(--first-color);
-}
+} */
 
 .nav {
   height: var(--header-height);
@@ -75,8 +81,6 @@
   .nav__interactions {
     justify-content: center;
     position: fixed;
-    background: rgba(0, 16, 41, 0.97);
-    backdrop-filter: blur(5px);
     top: var(--header-height);
     right: -150%;
     width: 75%;
@@ -89,8 +93,18 @@
   }
 
   .nav__interactions.active {
-    top: var(--header-height);
     right: 0;
+    background: rgba(0, 16, 41, 0.95);
+    backdrop-filter: blur(15px);
+  }
+
+  .header.active {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 16, 41, 0.95))
+    );
   }
 
   .nav_toggle-theme {

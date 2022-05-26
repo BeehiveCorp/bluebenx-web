@@ -1,8 +1,4 @@
 /* Collections */
-.collections {
-  background: #05142e;
-}
-
 .collections__title {
   font-family: 'Exo 2';
   font-size: var(--big-fs);

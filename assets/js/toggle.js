@@ -1,4 +1,5 @@
 const navInteractions = document.querySelector('#navInteractions');
+const header = document.querySelector('.header');
 
 // Toggle menu
 const navOpen = document.querySelector('#nav-open');
@@ -6,6 +7,7 @@ const navOpen = document.querySelector('#nav-open');
 function toggle() {
   navInteractions.classList.toggle('active');
   navOpen.classList.toggle('active');
+  header.classList.toggle('active');
 }
 
 function handleCloseNavInteractions() {
