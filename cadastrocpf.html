@@ -4,7 +4,175 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/register.css" />
+    <script src="./assets/js/sprint2.js"></script>
     <title>Cadastro - CPF</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <form
+        class="aaaaa"
+        id="cpfForm"
+        onsubmit="event.preventDefault(); handleRegisterPF();"
+      >
+        <fieldset>
+          <legend>
+            <h3>Pessoa física</h3>
+          </legend>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="name">Nome *</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Seu nome aqui"
+              />
+            </div>
+
+            <div class="field">
+              <label for="cpf">CPF *</label>
+              <input
+                type="number"
+                name="cpf"
+                id="cpf"
+                placeholder="Seu cpf"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="exemplo@email.com"
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Senha *</label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Sua senha"
+            />
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="age">Idade *</label>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="Sua idade"
+              />
+            </div>
+
+            <div class="field">
+              <label for="phone">Telefone *</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Seu telefone"
+              />
+            </div>
+
+            <div class="field">
+              <label for="gender">Sexo *</label>
+              <input
+                type="text"
+                name="gender"
+                id="gender"
+                placeholder="Seu gênero"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="field-group">
+            <div class="field">
+              <label for="address">Logradouro *</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Avenida ou rua"
+              />
+            </div>
+
+            <div class="field">
+              <label for="cep">Cep *</label>
+              <input
+                type="number"
+                name="cep"
+                id="cep"
+                placeholder="Seu cep"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="plus">Complemento</label>
+            <input
+              type="text"
+              name="plus"
+              id="plus"
+              placeholder="Bloco 01, Apto 02"
+            />
+          </div>
+
+          <div class="field">
+            <label for="district">Bairro *</label>
+            <input
+              type="text"
+              name="district"
+              id="district"
+              placeholder="Sua senha"
+            />
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="city">Cidade *</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Sua cidade"
+              />
+            </div>
+
+            <div class="field">
+              <label for="country">País *</label>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                placeholder="Seu país"
+              />
+            </div>
+
+            <div class="field">
+              <label for="num">Número *</label>
+              <input
+                type="text"
+                name="num"
+                id="num"
+                placeholder="Seu número"
+              />
+            </div>
+          </div>
+          <input type="submit" class="button" value="Cadastrar" />
+        </fieldset>
+        <a href="index.html">Já tenho cadastro</a>
+      </form>
+    </main>
+  </body>
 </html>

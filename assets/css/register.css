@@ -10,10 +10,28 @@ body {
   place-items: center;
 }
 
+form {
+  margin-bottom: 5rem;
+}
+
+fieldset {
+  margin: 5rem 0;
+}
+
 .button {
   width: 300px;
 }
 
 .button + .button {
   margin-top: 1rem;
+}
+
+legend h3 {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+input.button {
+  margin-top: 2.5rem;
+  cursor: pointer;
 }

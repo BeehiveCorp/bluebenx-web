@@ -4,7 +4,176 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/register.css" />
+    <script src="./assets/js/sprint2.js"></script>
     <title>Cadastro - CNPJ</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <form
+        id="cnpjForm"
+        onsubmit="event.preventDefault(); handleRegisterPJ();"
+      >
+        <fieldset>
+          <legend>
+            <h3>Pessoa jurídica</h3>
+          </legend>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="name">Nome *</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Seu nome aqui"
+              />
+            </div>
+
+            <div class="field">
+              <label for="cnpj">CNPJ *</label>
+              <input
+                type="text"
+                name="cnpj"
+                id="cnpj"
+                placeholder="Seu cnpj"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="exemplo@email.com"
+            />
+          </div>
+
+          <div class="field">
+            <label for="password">Senha *</label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Sua senha"
+            />
+          </div>
+
+          <div class="field">
+            <label for="companyDescription"
+              >Descrição do principal ramo de atuação *</label
+            >
+            <textarea
+              type="text"
+              name="companyDescription"
+              id="companyDescription"
+              placeholder="Sua empresa"
+            ></textarea>
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="password">Idade da empresa *</label>
+              <input
+                type="text"
+                name="age"
+                id="age"
+                placeholder="Idade da empresa"
+              />
+            </div>
+
+            <div class="field">
+              <label for="phone">Telefone *</label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Telefone da empresa"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="field-group">
+            <div class="field">
+              <label for="address">Logradouro *</label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Avenida ou rua"
+              />
+            </div>
+
+            <div class="field">
+              <label for="cep">Cep</label>
+              <input
+                type="text"
+                name="cep"
+                id="cep"
+                placeholder="Cep da empresa"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="plus">Complemento</label>
+            <input
+              type="text"
+              name="plus"
+              id="plus"
+              placeholder="Bloco 01, Apto 02"
+            />
+          </div>
+
+          <div class="field">
+            <label for="district">Bairro</label>
+            <input
+              type="text"
+              name="district"
+              id="district"
+              placeholder="Sua senha"
+            />
+          </div>
+
+          <div class="field-group">
+            <div class="field">
+              <label for="city">Cidade</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Sua cidade"
+              />
+            </div>
+
+            <div class="field">
+              <label for="country">País</label>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                placeholder="Seu país"
+              />
+            </div>
+
+            <div class="field">
+              <label for="num">Número</label>
+              <input
+                type="text"
+                name="num"
+                id="num"
+                placeholder="Seu número"
+              />
+            </div>
+          </div>
+          <input type="submit" class="button" value="Cadastrar" />
+        </fieldset>
+        <a href="index.html">Já tenho cadastro</a>
+      </form>
+    </main>
+  </body>
 </html>

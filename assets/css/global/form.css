@@ -26,7 +26,8 @@ form .field {
 
 form .field input[type='text'],
 form .field input[type='email'],
-form .field input[type='number'] {
+form .field input[type='number'],
+form .field textarea {
   flex: 1;
   background: #f0f0f5;
   border-radius: 8px;
@@ -36,6 +37,16 @@ form .field input[type='number'] {
   color: #6c6c80;
 }
 
+form .field textarea {
+  flex: 1;
+  width: 100%;
+  resize: none;
+  margin-bottom: 24px;
+  outline: none;
+  min-height: 150px;
+}
+
+form .field textarea::placeholder,
 form .field input::placeholder {
   color: #a0a0b2;
 }
