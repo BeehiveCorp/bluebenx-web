@@ -1,10 +1,10 @@
 .card {
   background: rgba(0, 10, 27, 0.4);
   outline: 3px solid rgba(0, 10, 27, 1);
-  backdrop-filter: blur(15px);
+  /* backdrop-filter: blur(15px); */
   padding: 1.5rem;
   border-radius: 1.5rem;
-  width: 300px;
+  max-width: 250px;
   height: min-content;
 }
 
