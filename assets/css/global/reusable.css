@@ -7,7 +7,7 @@
   font-family: 'Exo 2';
   font-size: var(--big-fs);
   text-align: left;
-  color: var(--dark-color);
+  color: var(--white-color);
   margin-bottom: var(--m-2);
   font-weight: var(--bold-fw);
 }

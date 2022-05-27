@@ -47,7 +47,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--dark-color);
+  color: var(--white-color);
   font-weight: var(--semiBold-fw);
 }
 

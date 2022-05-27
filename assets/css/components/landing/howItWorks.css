@@ -1,0 +1,18 @@
+/* Features */
+.how-it-works {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#031027)
+  );
+  margin-top: 2.5rem;
+}
+
+.how-it-works__content {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.how-it-works__card {
+  justify-self: flex-end;
+}

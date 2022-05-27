@@ -1,0 +1,39 @@
+.card {
+  background: rgba(0, 10, 27, 0.4);
+  outline: 3px solid rgba(0, 10, 27, 1);
+  backdrop-filter: blur(15px);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  width: 300px;
+}
+
+.card img {
+  border-radius: 1.5rem;
+}
+
+.card__content {
+  margin-top: var(--m-2);
+}
+
+.card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card__tag {
+  cursor: pointer;
+  background-color: rgba(0, 104, 255, 0.1);
+  color: rgba(0, 104, 255, 1);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: var(--smaller-fs);
+}
+
+.card__title {
+  margin-top: var(--m-1-5);
+}
+
+.card__description {
+  margin-top: var(--m-0-5);
+}
