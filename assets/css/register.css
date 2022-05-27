@@ -1,0 +1,19 @@
+@import url('../css/global/reset.css');
+@import url('../css/global/footer.css');
+@import url('../css/global/reusable.css');
+@import url('../css/global/layout.css');
+@import url('../css/global/form.css');
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.button {
+  width: 300px;
+}
+
+.button + .button {
+  margin-top: 1rem;
+}

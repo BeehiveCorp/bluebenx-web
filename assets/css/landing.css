@@ -4,6 +4,7 @@
 @import url('global/reusable.css');
 
 @import url('components/landing/card.css');
+@import url('global/form.css');
 
 @import url('components/landing/header.css');
 @import url('components/landing/hero.css');

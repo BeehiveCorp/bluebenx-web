@@ -25,3 +25,16 @@ navLinks.forEach(link =>
 // Outside touch should toggle menu
 const main = document.querySelector('.main');
 main.addEventListener('click', handleCloseNavInteractions);
+
+// Toggle popup
+const popup = document.getElementById('loginPopup');
+const backgroundPopup = document.getElementById('backgroundLoginPopup');
+const loginBtn = document.getElementById('loginBtn');
+
+function toggleLogin() {
+  popup.classList.toggle('active-popup');
+  backgroundPopup.classList.toggle('active-popup');
+}
+
+loginBtn.addEventListener('click', toggleLogin);
+backgroundPopup.addEventListener('click', toggleLogin);
